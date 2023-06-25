@@ -69,3 +69,12 @@ function celsiusFahrenheit(celsius){
     return celsiusFahrenheit(kelvinCelsius(kelvin));
   }
   
+
+  //aparece na tela 
+  function aparecerNaTela(conversao){
+    //declarando a função
+      var resultado = document.getElementById("resultado");
+      var resultadoFormatado= parseFloat(conversao).toFixed(2);
+      resultado.textContent = "O resultado da sua conversão é: " + resultadoFormatado;
+      //innerHTML modifica a página no js, nesse caso inserindo o texto e o valor
+    }
