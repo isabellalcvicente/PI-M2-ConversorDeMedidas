@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+
+<body>
+    <main>
+        <h1> Conversor de Unidades</h1>
+        <h3> Siga o passo a passo: </h3>
+        <!-- fiz um passo a passo para ser mais fácil p/ o user -->
+        <form>
+            <fieldset>
+            <section class="sectionCategoria">
+                <!-- separei em sections, para ficar mais fácil de manipular -->
+                <label>1° Selecione uma categoria </label>
+                <select id="categorias"> 
+                    <!-- select é para selecionar opções  -->
+                    <option value="0">Selecione uma opção</option>
+                    <!-- o value é para identificar, é uma prévia doq irá entrar -->
+                    <option value="Comprimento">Comprimento</option>
+                    <option value="Peso">Peso</option>
+                    <option value="Temperatura">Temperatura</option>
+                </select>
+                </section>
+
+
+                <section id="sectionUniOrigem" class="sectionUniOrigem">
+                    <label>2° Selecione uma unidade de origem</label>
+                    <!-- coloquei label pq é uma entrada  -->
+                    <select id="origemCompr" class="aparece">
+                        <option id="selecioneOpcao" value="0">Selecione uma opção</option>
+                        <option value="Metros">Metros</option>
+                        <option value="Centímetros">Centímetros</option>
+                        <option value="Polegadas">Polegadas</option>
+                    </select>
+                    <select id="origemPeso" class="nAparece">
+                        <option value="0">Selecione uma opção</option>
+                        <option value="Gramas">Gramas</option>
+                        <option value="Quilogramas">Quilogramas</option>
+                        <option value="Libras">Libras</option>
+                    </select>
+                    <select id="origemTemp" class="nAparece">
+                        <option value="0">Selecione uma opção</option>
+                        <option value="Celsius">Celsius</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                        <option value="Kelvin">Kelvin</option>
+                    </select>
+                    <!-- fiz 3 selections, pois duas serão escondidas quando a categoria for selecionada só aparecerá as unidades da categoria selecionada -->
+                </section>
+
+                <section class="sectionUniConver" id="sectionUniConver">
+                    <label>3° Selecione uma unidade de conversão</label>
+                    <select id="destinoCompr" class="aparece">
+                        <option value="0"> Unidade Destino</option>
+                        <option value="Metros">Metros</option>
+                        <option value="Centímetros">Centímetros</option>
+                        <option value="Polegadas">Polegadas</option>
+                    </select>
+
+                    <select id="destinoPeso" class="nAparece">
+                        <option value="0"> Unidade Destino</option>
+                        <option value="Gramas">Gramas</option>
+                        <option value="Quilogramas">Quilogramas</option>
+                        <option value="Libras">Libras</option>
+                    </select>
+                    <select id="destinoTemp" class="nAparece">
+                        <option value="0"> Unidade Destino</option>
+                        <option value="Celsius">Celsius</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                        <option value="Kelvin">Kelvin</option>
+                    </select>
+                </section>
+
+                <input type="number" id="entrada" placeholder="Valor a ser convertido"/> 
+                <button id="clickButton"> Converter </button>
+            </fieldset>
+        </form>
+        <p id="resultado"></p>
+    </main>
+
+    <script src="./rascunho.js"> </script>
+</body>
+
+</html>
