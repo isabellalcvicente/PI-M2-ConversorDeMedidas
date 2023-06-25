@@ -78,3 +78,21 @@ function celsiusFahrenheit(celsius){
       resultado.textContent = "O resultado da sua conversão é: " + resultadoFormatado;
       //innerHTML modifica a página no js, nesse caso inserindo o texto e o valor
     }
+
+// funcao para realizar conversao com base nos valores do select/option
+    function convTemp(entrada){
+        // entrada, chama o valor, + transforma string em number
+      if (origemTemp.value=="Celsius" && destinoTemp.value =="Fahrenheit"){
+        aparecerNaTela(celsiusFahrenheit(entrada))
+      }else if (origemTemp.value=="Celsius" && destinoTemp.value =="Kelvin"){
+        aparecerNaTela(celsiusKelvin(entrada))
+      }else if (origemTemp.value=="Fahrenheit" && destinoTemp.value =="Celsius"){
+        aparecerNaTela(fahrenheitCelsius(entrada))
+      }else if (origemTemp.value=="Fahrenheit" && destinoTemp.value =="Kelvin"){
+        aparecerNaTela(fahrenheitKelvin(entrada))
+      }else if (origemTemp.value=="Kelvin" && destinoTemp.value =="Celsius"){
+        aparecerNaTela(kelvinCelsius(entrada))
+      }else if (origemTemp.value=="Kelvin" && destinoTemp.value =="Fahrenheit"){
+        aparecerNaTela(kelvinFahrenheit(entrada))
+      }return 
+      };
