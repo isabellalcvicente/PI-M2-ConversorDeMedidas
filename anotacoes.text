@@ -1,0 +1,68 @@
+Um campo numérico de entrada, onde a pessoa usuária poderá inserir o
+valor a ser convertido. // input 
+
+Três campos de seleção: um para selecionar a categoria, outro para a
+unidade de medida de origem e outro para a unidade de medida de destino. /input, seletion, option, radio
+Comprimento: metros, centímetros, polegadas.
+Peso: quilogramas, gramas, libras.
+Temperatura: Celsius, Fahrenheit, Kelvin.
+
+Um botão de "Converter" para realizar a conversão. // button 
+
+Um campo de saída para exibir o resultado da conversão. // algo parecido com o alert 
+
+Read.ME 
+
+Comentários 
+
+
+Enquanto, não selecionar nenhum (Selecione uma categoria), não aparecerá nada 
+Quando selecionar a categoria, aparecerá a seleçã das unidades da categoria correspondente. 
+
+on = seleciona o evento 
+change = evento após fazer uma escolha no select
+
+1o estado: selecione categoria 3 oçpções// selecione unidade origem 0 opções// caso o user tentar converter sem selecionar categoria = negue. // selecione unidade destino 0 opções // caso o user tentar converter sem selecionar categoria = negue.
+2o estado: selecionado categoria Comprimento// aparece apenas opções origem metros, centimetros e polegadas// aparece opções de destino as duas outras que não estão 
+
+
+OK 1o problema: fazer com que suma as opções q eu n quero
+OK 2o: fazer com que apareça as opções q eu quero
+OK 3o: verificar se o campo está preenchido: 
+OK 4o: fazer com que guarde a info
+OK 5o:fazer com q suma o texto do botão
+
+6o: converter o Comprimento{
+    a. metros pra centimetros = valor*100
+    b. metros pra polegadas = valor*39,37
+    c. centimetros pra metros = valor/100 
+    d. centimetros pra polegadas = valor/2,54
+    e. polegadas pra metros = valor/39,37
+    f. polegadas pra centimetros = valor*2,54
+}
+
+7o: converter o Peso{
+    a. gramas pra quilogramas = valor/1000
+    b. gramas pra libras = valor/453,59
+    c. quilogramas pra gramas = valor*1000
+    d. quilogramas pra libras = valor*2,20
+    e. libras pra gramas = valor*453,59
+    f. libras pra quilogramas = valor*2,20
+}
+
+8o: converter a Temperatura{
+    a. Celsius pra Fahrenheit = (valor * 9/5) + 32
+    b. Celsius pra kelvin = valor + 273.15
+    c. Fahrenheit pra Celsius = (valor - 32) * 5/9
+    d. Fahrenheit pra kelvin = (valor + 459.67) * 5/9
+    e. kelvin pra Celsius = valor - 273.15
+    f. kelvin pra Fahrenheit = (valor * 9/5) - 459.67
+}
+
+
+
+9o: mostrar o resultado na tela
+10o: OK transformar string em number 
+11o: OK Fonte, layout, CSS 
+12o: tirar o console 
+13o: mudar o nome da funcao convTemp
