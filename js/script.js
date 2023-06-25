@@ -119,7 +119,6 @@ var temperatura={
      }
      };
      
-     
 
   //aparece na tela 
   function aparecerNaTela(conversor){
@@ -131,10 +130,13 @@ var temperatura={
     }
 
 // funcao para realizar conversao com base nos valores do select/option
-    function conversor(objeto,opcao1,opcao2,opcao3,entrada){
+    function conversor(objeto,entrada){
         // entrada, chama o valor, + transforma string em number
         var origem=objeto.origem.value 
         var destino=objeto.destino.value
+        var opcao1= objeto.opcao1
+        var opcao2= objeto.opcao2
+        var opcao3= objeto.opcao3
       if (origem==opcao1 && destino ==opcao2){
         aparecerNaTela(objeto.opcao1opcao2(entrada))
       }else if (origem==opcao1 && destino ==opcao3){
@@ -152,13 +154,13 @@ var temperatura={
 
     function verificarCategoria(categoria,entrada){
     if (categoria=="Comprimento"){
-        conversor(comprimento,comprimento.opcao1,comprimento.opcao2,comprimento.opcao3,entrada);
+        conversor(comprimento,entrada);
     }else if (categoria=="Peso"){
-        conversor(peso,peso.opcao1,peso.opcao2,peso.opcao3,entrada);
+        conversor(peso,entrada);
     }else if (categoria=="Temperatura"){
-            conversor(temperatura,temperatura.opcao1,temperatura.opcao2,temperatura.opcao3,entrada);
+            conversor(temperatura,entrada);
         }
-    }
+    };
 
       clicar.addEventListener('click', function(event){
         // Obtem o valor do campo de entrada
