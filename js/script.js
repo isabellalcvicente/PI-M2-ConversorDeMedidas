@@ -26,3 +26,23 @@ function metrosCentimetros(metros){
     return polegadas*2,54;
   }
   
+
+  //funcoes de conversao de peso
+function gramasQuilogramas(gramas){
+    return gramas/1000;
+  }
+  function gramasLibras(gramas){
+    return gramas/453,59;
+  }
+  function quilogramasGramas(quilogramas){
+    return quilogramas*1000;
+  }
+  function quilogramasLibras(quilogramas){
+    return quilogramas*2,20;
+  }
+  function librasGramas(libras){
+    return libras*453,59;
+  }
+  function librasQuilogramas(libras){
+    return libras*2,20;
+  }
