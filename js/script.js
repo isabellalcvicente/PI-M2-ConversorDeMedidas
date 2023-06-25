@@ -46,3 +46,26 @@ function gramasQuilogramas(gramas){
   function librasQuilogramas(libras){
     return libras*2,20;
   }
+
+  // funcoes de conversao de temperatura
+function celsiusFahrenheit(celsius){
+    console.log("Estamos no celsiusF")
+    console.log((celsius * 9 / 5) + 32);
+    return (celsius * 9 / 5) + 32;
+  }
+  function celsiusKelvin(celsius){
+    return celsius + 273.15;
+  }
+  function fahrenheitCelsius(fahrenheit){
+    return (fahrenheit - 32) * 9 / 5;
+  }
+  function fahrenheitKelvin(fahrenheit){
+    return fahrenheitCelsius(fahrenheit) + 273.15;
+  }
+  function kelvinCelsius(kelvin){
+    return kelvin - 273.15;
+  }
+  function kelvinFahrenheit(kelvin){
+    return celsiusFahrenheit(kelvinCelsius(kelvin));
+  }
+  
