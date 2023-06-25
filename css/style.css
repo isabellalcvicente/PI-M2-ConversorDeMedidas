@@ -1,0 +1,80 @@
+/* Geral  */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+  font-family: 'Merriweather', serif;
+  color: rgb(19, 19, 102);
+  font-size: 18px;
+  background-color: rgb(171, 138, 201);
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+h1,h3 {
+ padding: 5px;
+}
+
+
+
+fieldset{
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: 18px;
+  width: 100%;
+  align-items: flex-start;
+  gap: 10px;
+
+}
+
+button{
+  font-size: 16px;
+  background-color: rgb(161, 161, 238);
+  border-radius: 3px;
+  padding: 4px 8px;
+  width: 100%;
+}
+
+section{    
+  font-size: 16px;
+  padding:5px;
+}
+
+select{   
+  font-family: 'Merriweather', serif;
+  color: rgb(19, 19, 102);
+  font-size: 13px;
+  border-radius: 3px;
+  font-weight: bold;
+
+}
+
+input{
+  width: 100%;                        
+  border-radius: 3px;
+  font-size: 13px;
+  padding: 5px;
+}
+
+.aparece{
+  display: flex;
+}
+
+.nAparece{
+  display: none;
+}
+
