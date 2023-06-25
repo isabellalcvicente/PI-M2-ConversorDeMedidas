@@ -59,8 +59,6 @@ OK 5o:fazer com q suma o texto do botão
     f. kelvin pra Fahrenheit = (valor * 9/5) - 459.67
 }
 
-
-
 9o: mostrar o resultado na tela
 10o: OK transformar string em number 
 11o: OK Fonte, layout, CSS 
