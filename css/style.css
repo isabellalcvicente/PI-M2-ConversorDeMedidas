@@ -1,8 +1,6 @@
-/* Geral  */
-
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
-
+/* reset CSS */
 *{
   margin: 0;
   padding: 0;
@@ -10,6 +8,7 @@
   text-decoration: none;
 }
 
+/* body */
 body{
   font-family: 'Merriweather', serif;
   color: rgb(19, 19, 102);
@@ -17,6 +16,7 @@ body{
   background-color: rgb(171, 138, 201);
 }
 
+/* conteúdo principal */
 main{
   display: flex;
   align-items: center;
@@ -29,8 +29,6 @@ h1,h3 {
  padding: 5px;
 }
 
-
-
 fieldset{
   background-color: whitesmoke;
   border-radius: 20px;
@@ -39,6 +37,11 @@ fieldset{
   align-items: flex-start;
   gap: 10px;
 
+}
+
+label{
+  display: block;
+  /* faz com que ele fique sozinho na linha */
 }
 
 button{
@@ -70,6 +73,7 @@ input{
   padding: 5px;
 }
 
+/* classes */
 .aparece{
   display: flex;
 }
